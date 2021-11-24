@@ -1,98 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
-<body>
-     <!--Navbar-->
-     <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
-            <a href="#">Jinyong</a>
-        </div>
-        <div class="navbar__menu">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonial</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellie's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Ellie"
+    />
+    <meta name="author" content="Ellie" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Ellie</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
-    <!--Home-->
+    <!-- Home -->
     <section id="home">
+      <div class="home__container">
         <img
-        src="imgs/profile.jpg"
-        alt="Jinyong;s profile photo"
-        class="home__avatar"
-    />
-    <h1 class="home__title">Hello,<br />I'm Dream Coder</h1>
-    <h2 class="home__description">Front-end developer, who can do design</h2>
+          src="imgs/profile.jpg"
+          alt="Ellie's profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
+        <h2 class="home__description">
+         A Software Engineer currently residing in Sydney, Australia.
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
 
-    <button class="home__contact">Contact Me</button>
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+        rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
+        deserunt doloremque laudantium similique corrupti, iusto optio rerum in
+        deleniti officia.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript,
+            <br />React, Vue, Web APIs
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <p class="major__description">
+            Android, iOS, React Native, Flutter,
+            <br />Java, Swift, Kotlin
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
+            Java, JavaScript, Go, NodeJS,
+            <br />Rest APIs, GraphGL
+          </p>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/logo-samsung.png"
+            alt="samsung"
+            class="job__logo"
+          />
+         <div class="job__description">
+          <p class="job__name">
+            Currently working at Samsung as Software Engineer
+          </p>
+          <p class="job__period">2019 Sept - Until now</p>
+         </div>
+        </div>
+        <div class="job">
+          <img
+            src="imgs/jobs/logo-samsung.png"
+            alt="samsung"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Software Engineer
+            </p>
+            <p class="job__period">2019 Sept - Until now</p>
+           </div>
+      </div>
+    </section>
 
-    <!--About-->
-    <section id="about">
-        <h1>About me</h1>
-        <p>Even though I worked as a CG artist & Web Designer for about 4years,
-            I focus on some programs including HTML, CSS, Git&Github, JavaScript, 
-            Ajax, Vue.js as a front-end developer for my career in the future.
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team environment
+          and independently. Ability to plan and time schedule, work under strict
+          time pressure and adapt quickly when needed.
         </p>
-        <div class="about__major">
-            <div class="major"></div>
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%;"></div>
+              </div>
             </div>
-            <div class="major__title">Front-end</div>
-            <div class="major__description">
-                HTML, CSS, JavaScript, TypeScript,
-                <br />React, Vue, Web APIs
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
             </div>
-        </div>
-        <div class="about__major">
-            <div class="major"></div>
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
             </div>
-            <div class="major__title">Front-end</div>
-            <div class="major__description">
-                HTML, CSS, JavaScript, TypeScript,
-                <br />React, Vue, Web APIs
+            <div class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
             </div>
-        </div>
-        <div class="about__major">
-            <div class="major"></div>
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>88%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 88%;"></div>
+              </div>
             </div>
-            <div class="major__title">Front-end</div>
-            <div class="major__description">
-                HTML, CSS, JavaScript, TypeScript,
-                <br />React, Vue, Web APIs
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>77%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 77%;"></div>
+              </div>
             </div>
-        </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="imgs/jobs/" 
-                alt="CoSA VFX" 
-                class="job__logo"
-                />
-                <p class="job__name"></p>
-                <p class="job__period"></p>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>IntelliJ</span></li>
+                <li><span>Android Studio Code</span></li>
+                <li><span>iOS development tools</span></li>
+                <li><span>Sketch app</span></li>
+              </ul>
             </div>
-            <div class="job"></div>
-        </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Scrum master</span></li>
+                <li><span>Math</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </section>
-    <!--Skills-->
-    <section id="skills"></section>
-    <!--Work-->
-    <section id="work"></section>
-    <!--Testimonial-->
-    <section id="testimonial"></section>
-    <!--Contact-->
-    <section id="contact"></section>
-</body>
-</html>
+
+    <!-- Work -->
+    
