@@ -1,2 +1,2 @@
 # portfolio
- first_personal_project
+ first_project
