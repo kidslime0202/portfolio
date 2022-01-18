@@ -1,2 +1,2 @@
 # portfolio
- jinyong's portfolio
+ first_personal_project
